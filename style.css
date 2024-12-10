@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  width: 100px;
+  height: 100px;
+}
+
+.cards div {
+  position: absolute;
+  width: 10rem;
+  height: 15rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+  transform-origin: center 250px;
+  transition: all 0.6s linear;
+}
+
+/* Cards styling */
+.cards :nth-child(1) {
+  background-color: #2696ff;
+  transform: rotate(4deg);
+}
+
+.cards :nth-child(2) {
+  background-color: #ff3ef5;
+  transform: rotate(3deg);
+}
+
+.cards :nth-child(3) {
+  background-color: #e6ff2c;
+  transform: rotate(2deg);
+}
+
+.cards :nth-child(4) {
+  background-color: #ff6262;
+  transform: rotate(1deg);
+}
+
+.cards :nth-child(5) {
+  background-color: #4961ff;
+}
+
+.cards :nth-child(6) {
+  background-color: #ffda36;
+  transform: rotate(-1deg);
+}
+.cards :nth-child(7) {
+  background-color: #01ffe6;
+  transform: rotate(-2deg);
+}
+
+.cards :nth-child(8) {
+  background-color: #dd01ff;
+  transform: rotate(-3deg);
+}
+
+.cards :nth-child(9) {
+  background-color: #01ff51;
+  transform: rotate(-4deg);
+}
+
+/* Hover effect */
+.cards:hover :nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.cards:hover :nth-child(2) {
+  transform: rotate(35deg);
+}
+
+.cards:hover :nth-child(3) {
+  transform: rotate(25deg);
+}
+
+.cards:hover :nth-child(4) {
+  transform: rotate(15deg);
+}
+
+.cards:hover :nth-child(6) {
+  transform: rotate(-15deg);
+}
+
+.cards:hover :nth-child(7) {
+  transform: rotate(-25deg);
+}
+
+.cards:hover :nth-child(8) {
+  transform: rotate(-35deg);
+}
+
+.cards:hover :nth-child(9) {
+  transform: rotate(-45deg);
+}
